@@ -19,7 +19,9 @@ User → S3 Upload Bucket → Lambda →
 • DynamoDB (store metadata)
 • S3 Processed Bucket (store result file)
 • SNS (email notifications)
-![Architecture Diagram](architecture.png)
+<p align="center">
+  <img src="architecture.png" width="700">
+</p>
 
 Processed bucket delete events → SNS alert
 
