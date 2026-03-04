@@ -1,7 +1,7 @@
 # AWS Serverless Text Processing Pipeline
 
 ![AWS](https://img.shields.io/badge/AWS-Serverless-orange)
-![Python](https://img.shields.io/badge/Python-3.x-turqoise)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-Event--Driven-green)
 ![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
 
