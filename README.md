@@ -1,15 +1,15 @@
 # AWS Serverless Text Processing Pipeline
 
 ![AWS](https://img.shields.io/badge/AWS-Serverless-orange)
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Architecture](https://img.shields.io/badge/Architecture-Event--Driven-green)
-![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
-
----
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-yellow)
+![API Gateway](https://img.shields.io/badge/AWS-API_Gateway-red)
+![S3](https://img.shields.io/badge/AWS-S3-green)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## Overview
 
-This project implements a fully event-driven, serverless text processing pipeline on AWS.
+This project demonstrates a serverless text processing pipeline using AWS Lambda, API Gateway, and Amazon S3.
 
 The system automatically processes uploaded `.txt` files, extracts metadata, persists results, and generates real-time notifications — without provisioning or managing servers.
 
