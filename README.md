@@ -1,4 +1,4 @@
-# AWS Serverless Text Processing Pipeline
+# 🚀AWS Serverless Text Processing Pipeline
 
 ![AWS](https://img.shields.io/badge/AWS-Serverless-orange)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
@@ -23,7 +23,7 @@ The architecture follows cloud-native design principles including:
 
 ---
 
-## Architecture
+## 🏗️ Architecture
 
 <p align="center">
   <img src="architecture.png" width="600">
