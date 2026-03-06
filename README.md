@@ -32,25 +32,27 @@ The architecture follows cloud-native design principles including:
 ### Flow
 
 1. A user uploads a `.txt` file to the S3 upload bucket  
-2. S3 triggers a Lambda function  
-3. The Lambda function:
-   - Counts words in the file  
-   - Stores metadata in DynamoDB  
-   - Writes processed output to a separate S3 bucket  
-   - Publishes an SNS notification  
-4. Deletion events from the processed bucket trigger additional SNS alerts  
-
+2. S3 sends an event notification to an SQS queue  
+3. Lambda is triggered by messages from the SQS queue  
+4. The Lambda function:
+   - Downloads the file
+   - Counts the words in the text
+   - Stores metadata in DynamoDB
+   - Writes the processed output to a separate S3 bucket
+   - Publishes an SNS notification
+5. If processing fails, the message is retried and eventually moved to a Dead Letter Queue (DLQ)
+6. CloudWatch monitors the DLQ and can trigger alerts if failures accumulate
 ---
 
 ## AWS Services Used
 
-- Amazon S3
-- AWS Lambda
-- Amazon DynamoDB
-- Amazon SNS
-- Amazon CloudWatch Logs
-
-Region: **eu-north-1 (Stockholm)**
+- **Amazon S3** — File upload and processed output storage
+- **Amazon SQS** — Event queue for decoupled processing
+- **Amazon SQS Dead Letter Queue (DLQ)** — Captures failed messages after retry attempts
+- **AWS Lambda** — Serverless text processing (Python 3.11)
+- **Amazon DynamoDB** — Stores file metadata and word counts
+- **Amazon SNS** — Sends processing notifications
+- **Amazon CloudWatch** — Logging, monitoring, and DLQ alarms
 
 ---
 
