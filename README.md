@@ -69,6 +69,7 @@ The architecture follows cloud-native design principles including:
 ---
 
 ## Repository Structure
+
 aws-serverless-text-processing-pipeline
 │
 ├── README.md
@@ -85,6 +86,7 @@ aws-serverless-text-processing-pipeline
 │
 └── setup/
 └── deployment-steps.md
+
 ---
 
 ## Design Considerations
