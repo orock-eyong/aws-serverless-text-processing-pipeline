@@ -69,8 +69,22 @@ The architecture follows cloud-native design principles including:
 ---
 
 ## Repository Structure
-
-
+aws-serverless-text-processing-pipeline
+│
+├── README.md
+│
+├── architecture/
+│ └── pipeline-diagram.svg
+│
+├── lambda/
+│ └── text_processing.py
+│
+├── policies/
+│ ├── sqs-queue-policy.json
+│ └── sns-topic-policy.json
+│
+└── setup/
+└── deployment-steps.md
 ---
 
 ## Design Considerations
