@@ -1,5 +1,10 @@
 # 🚀 Serverless File Processing Pipeline
 
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws)
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Serverless](https://img.shields.io/badge/Architecture-Serverless-green)
+![Lambda](https://img.shields.io/badge/AWS-Lambda-orange?logo=awslambda)
+
 A fully serverless event-driven pipeline built on AWS that 
 automatically processes uploaded text files, counts words, 
 stores metadata and notifies via email.
