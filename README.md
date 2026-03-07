@@ -88,7 +88,6 @@ The architecture follows cloud-native design principles including:
 
 ## Future Enhancements
 
-- Introduce Amazon SQS for message buffering and decoupling
 - Add API Gateway for querying metadata
 - Implement IAM least-privilege policies
 - Convert infrastructure to Infrastructure-as-Code (Terraform or CloudFormation)
