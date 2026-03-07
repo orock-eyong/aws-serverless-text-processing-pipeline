@@ -1,0 +1,23 @@
+# S3 permission to publish into the SNS Topic (just in case) in my architecture we receive the notification through Lambda which had full access to SNS
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowS3PublishToSNS",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "SNS:Publish",
+      "Resource": "arn:aws:sns:eu-west-1:578761488692:EyongFileNotification",
+      "Condition": {
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:::eyong-file-upload-bucket"
+        },
+        "StringEquals": {
+          "aws:SourceAccount": "578761488692"
+        }
+      }
+    }
+  ]
+}
