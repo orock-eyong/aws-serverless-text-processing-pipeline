@@ -26,7 +26,7 @@ The architecture follows cloud-native design principles including:
 ## 🏗️ Architecture
 
 <p align="center">
-  <img src="architecture-v2.png" width="600">
+  <img src="architecture-v2.png" width="700">
 </p>
 
 ### Flow
